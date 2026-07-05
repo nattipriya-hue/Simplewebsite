@@ -1,0 +1,346 @@
+
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Lakshmi Associates | GST & Financial Consultants</title>
+    <style>
+        :root {
+            --primary-blue: #0A2540;
+            --accent-gold: #D4AF37;
+            --text-dark: #333333;
+            --bg-light: #F4F6F9;
+            --white: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            line-height: 1.6;
+        }
+
+        /* ஹெடர் மற்றும் லோகோ வடிவமைப்பு */
+        header {
+            background-color: var(--primary-blue);
+            color: var(--white);
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 5px solid var(--accent-gold);
+        }
+
+        /* புகைப்படத்திற்கான பிரத்யேக ஸ்டைல் (Image Styling) */
+        .brand-logo {
+            max-width: 180px; /* லோகோவின் அளவு */
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            background-color: var(--white);
+            padding: 5px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+
+        header .subtitle {
+            margin: 5px 0 15px 0;
+            font-size: 1.2rem;
+            color: var(--accent-gold);
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        header .tagline {
+            font-style: italic;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .hero-section {
+            text-align: center;
+            margin-bottom: 50px;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .hero-section h2 {
+            color: var(--primary-blue);
+            font-size: 2.2rem;
+            margin-top: 0;
+        }
+
+        .hero-section p {
+            font-size: 1.15rem;
+            max-width: 900px;
+            margin: 15px auto;
+            color: #555;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-bottom: 60px;
+        }
+
+        .feature-card {
+            background: var(--white);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--accent-gold);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            color: var(--primary-blue);
+            margin-top: 0;
+            font-size: 1.3rem;
+            border-bottom: 2px solid #F0F0F0;
+            padding-bottom: 10px;
+        }
+
+        .syllabus-section {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .syllabus-section h2 {
+            color: var(--primary-blue);
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+        }
+
+        .course-module {
+            background: #F8FAFC;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 5px solid var(--primary-blue);
+        }
+
+        .course-module h3 {
+            margin-top: 0;
+            color: var(--primary-blue);
+            font-size: 1.2rem;
+        }
+
+        .course-module ul {
+            padding-left: 20px;
+            margin: 10px 0 0 0;
+        }
+
+        .course-module ul li {
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+        }
+
+        .quote-banner {
+            background-color: var(--primary-blue);
+            color: var(--white);
+            text-align: center;
+            padding: 30px;
+            border-radius: 8px;
+            margin: 50px 0;
+            font-size: 1.4rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            border: 2px solid var(--accent-gold);
+        }
+
+        footer {
+            background-color: var(--primary-blue);
+            color: var(--white);
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+            border-top: 5px solid var(--accent-gold);
+        }
+
+        footer h3 {
+            color: var(--accent-gold);
+            margin-top: 0;
+            font-size: 1.6rem;
+        }
+
+        .contact-details {
+            font-size: 1.1rem;
+            margin: 10px 0;
+        }
+
+        .contact-details a {
+            color: var(--white);
+            text-decoration: none;
+        }
+
+        .locations {
+            margin-top: 20px;
+            font-weight: bold;
+            color: var(--accent-gold);
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ஹெடர் பகுதி (லோகோவுடன்) -->
+    <header>
+        <!-- உங்களது புகைப்படத்தை இணைக்கும் குறியீடு கீழே உள்ளது -->
+        <img src="logo.jpg" alt="Sri Lakshmi Associates Logo" class="brand-logo">
+        <h1>SRI LAKSHMI ASSOCIATES</h1>
+        <div class="subtitle">TAX & FINANCIAL CONSULTANTS</div>
+        <div class="tagline">Learn. Understand. Apply.</div>
+    </header>
+
+    <div class="container">
+        
+        <section class="hero-section">
+            <h2>Join Our Comprehensive GST Classes</h2>
+            <p>Designed for students who want to understand GST from basic to advanced level with practical knowledge. Unlock excellent career opportunities and build expert knowledge in the field of taxation with our industry-oriented training program.</p>
+        </section>
+
+        <section class="features-grid">
+            <div class="feature-card">
+                <h3>I. Expert Guidance</h3>
+                <p>Learn from highly experienced tax professionals with real-life examples and case studies.</p>
+            </div>
+            <div class="feature-card">
+                <h3>II. Practical Learning</h3>
+                <p>Hands-on training featuring live returns filing practice to gain real-time portal experience.</p>
+            </div>
+            <div class="feature-card">
+                <h3>III. Up-to-Date Content</h3>
+                <p>Fully covers the latest GST law updates and recent amendments to keep you ahead.</p>
+            </div>
+            <div class="feature-card">
+                <h3>IV. Career Focused</h3>
+                <p>Enhance your professional skills and significantly boost your career opportunities in taxation.</p>
+            </div>
+        </section>
+
+        <div class="quote-banner">
+            "LEARN TODAY, LEAD THE FINANCIAL WORLD TOMORROW."
+        </div>
+
+        <section class="syllabus-section">
+            <h2>What You Will Learn</h2>
+            
+            <div class="course-grid">
+                <div class="course-module">
+                    <h3>1. Introduction & Concept of GST</h3>
+                    <ul>
+                        <li>Fundamental concepts and framework.</li>
+                        <li>"One Nation, One Tax" philosophy.</li>
+                        <li>Pre-GST era vs. GST (Eliminating cascading effect).</li>
+                        <li>Dual GST Model (CGST, SGST/UTGST, IGST).</li>
+                        <li>GST Council & Constitutional Framework.</li>
+                        <li>Benefits of GST to business compliance.</li>
+                    </ul>
+                </div>
+
+                <div class="course-module">
+                    <h3>2. GST Registration</h3>
+                    <ul>
+                        <li>Step-by-step procedures for new registrations.</li>
+                        <li>Threshold Limits & Compulsory Registration.</li>
+                        <li>Documentation Required.</li>
+                        <li>Live Portal Practical Training.</li>
+                        <li>Aadhaar Authentication & Application Tracking.</li>
+                    </ul>
+                </div>
+
+                <div class="course-module">
+                    <h3>3. Supply, Classification & ITC</h3>
+                    <ul>
+                        <li>Core concepts of supply and classification.</li>
+                        <li>Classification via HSN and SAC Codes.</li>
+                        <li>Eligibility and Conditions for Claiming ITC.</li>
+                        <li>Blocked Credits (Section 17(5)).</li>
+                        <li>Reconciliation of ITC (GSTR-2B vs. Books).</li>
+                        <li>Reversal of Input Tax Credit.</li>
+                    </ul>
+                </div>
+
+                <div class="course-module">
+                    <h3>4. GST Returns</h3>
+                    <ul>
+                        <li>Overview of the GST Return Ecosystem.</li>
+                        <li>GSTR-1 & GSTR-1A (Outward Supplies).</li>
+                        <li>GSTR-2A & GSTR-2B (Auto-populated Statements).</li>
+                        <li>GSTR-3B (Monthly Summary & Tax Payment).</li>
+                        <li>Annual Returns & Reconciliation (GSTR-9 & GSTR-9C).</li>
+                        <li>Late Fees, Interest, and Penalty Calculations.</li>
+                    </ul>
+                </div>
+
+                <div class="course-module">
+                    <h3>5. E-Way Bill & E-Invoicing</h3>
+                    <ul>
+                        <li>Introduction to the E-Way Bill System.</li>
+                        <li>Generating & Managing E-Way Bills (Portal Workflow).</li>
+                        <li>Introduction to E-Invoicing.</li>
+                        <li>E-Invoicing Amendments & Cancellations.</li>
+                    </ul>
+                </div>
+
+                <div class="course-module">
+                    <h3>6. Practical Filing & Case Studies</h3>
+                    <ul>
+                        <li>End-to-End Live Client Data Filing.</li>
+                        <li>Handling Sales Reversals & Discrepancies.</li>
+                        <li>Drafting Official Replies to Department Notices.</li>
+                        <li>Rectification of Filing Errors & Real-Life Case Studies.</li>
+                    </ul>
+                </div>
+
+                <div class="course-module">
+                    <h3>7. Latest Amendments & Compliance</h3>
+                    <ul>
+                        <li>GST 2.0 Rate Rationalization.</li>
+                        <li>New E-Invoicing Thresholds & Window Rules.</li>
+                        <li>Strict Portal Validations & Negative Ledgers.</li>
+                        <li>Budget 2026 Relief Measures for Exporters.</li>
+                        <li>The Invoice Management System (IMS) Workflow.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <h3>CONTACT US</h3>
+        <p class="contact-details"><strong>Phone:</strong> 6379529550, 9788259551</p>
+        <p class="contact-details"><strong>Email:</strong> <a href="mailto:srilakshmiassociate2019@gmail.com">srilakshmiassociate2019@gmail.com</a></p>
+        <p class="locations">COIMBATORE | CHENNAI | ERODE</p>
+    </footer>
+
+</body>
+</html>
